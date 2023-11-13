@@ -29,10 +29,10 @@
     /* Project */
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/hooks/*": ["src/hooks/*"],
-      "@/lib/*": ["src/lib/*"],
-      "@/test": ["src/test/utils"]
+      "~/components/*": ["src/components/*"],
+      "~/hooks/*": ["src/hooks/*"],
+      "~/lib/*": ["src/lib/*"],
+      "~/test": ["src/_test/utils"]
     },
     "types": ["vitest/globals"]
   },

@@ -11,16 +11,16 @@ export default defineConfig({
   // rollup
   resolve: {
     alias: {
-      '@/components': path.resolve(__dirname, './src/components'),
-      '@/hooks': path.resolve(__dirname, './src/hooks'),
-      '@/lib': path.resolve(__dirname, './src/lib'),
-      '@/test': path.resolve(__dirname, './src/test/utils'),
+      '~/components': path.resolve(__dirname, './src/components'),
+      '~/hooks': path.resolve(__dirname, './src/hooks'),
+      '~/lib': path.resolve(__dirname, './src/lib'),
+      '~/test': path.resolve(__dirname, './src/_test/utils'),
     },
   },
   // vitest
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/test/setup.ts',
+    setupFiles: './src/_test/setup.ts',
   },
 })
