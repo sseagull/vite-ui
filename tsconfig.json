@@ -29,9 +29,12 @@
     /* Project */
     "baseUrl": ".",
     "paths": {
-      "~/components/*": ["src/components/*"],
-      "~/hooks/*": ["src/hooks/*"],
+      /* omit the `/*` if importing from a batched `index.ts` */
+      "~/components": ["src/components"],
+      "~/hooks": ["src/hooks"],
+      /* include the `/*` if importing directly from directory files */
       "~/lib/*": ["src/lib/*"],
+      /* omit the `/*` if targeting a specific file for imports */
       "~/test": ["src/_test/utils"]
     },
     "types": ["vitest/globals"]
